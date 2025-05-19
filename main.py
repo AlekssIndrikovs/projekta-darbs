@@ -67,7 +67,7 @@ class TripBST:
         else:
             self._collect_over_cost(node.right, min_cost, result)
 
-def save_trips(trips, filename="trip_costs.xlx"):
+def save_trips(trips, filename="trip_costs.xlsx"):
     if os.path.exists(filename):
         wb = load_workbook(filename)
         ws = wb.active
@@ -76,11 +76,11 @@ def save_trips(trips, filename="trip_costs.xlx"):
         ws = wb.active 
         ws.append(["Distance, Fuel efficiency, Fuel price, Trip Cost"])
     for trip in trips:
-        ws.append(trip.to.list())
+        ws.append(trip.to_list())
 
     wb.save(filename)
 
-def load_trips_from_excel(filename="trip_costs.xlx"):
+def load_trips_from_excel(filename="trip_costs.xlsx"):
     trips = []
     wb = load_workbook(filename)
     ws = wb.active
