@@ -10,7 +10,7 @@ class Trip:
     
     def calculate_cost(self):
         liters = (self.distance / 100) * self.fuel_efficiency
-        return round(liters*self.fuel_efficiency, 2)
+        return round(liters*self.fuel_price, 2)
 
     def __repr__(self):
         return f"{self.distance} km, {self.fuel_efficiency} L/100km, {self.fuel_price} euros/l => {self.cost} euros"
