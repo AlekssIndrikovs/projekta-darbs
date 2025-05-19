@@ -30,7 +30,7 @@ class TripBST:
         self.root = None
 
     def insert(self, trip):
-        self.root = self.insert_recursive(self.root, trip)
+        self.root = self._insert_recursive(self.root, trip)
 
     def _insert_recursive(self, node, trip):
         if not node:
@@ -43,7 +43,7 @@ class TripBST:
     
     def inorder_traversal(self):
         result =[]
-        self.inorder(self.root, result)
+        self._inorder(self.root, result)
         return result
     
     def _inorder(self, node, result):
