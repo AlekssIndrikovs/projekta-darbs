@@ -1,1 +1,4 @@
-# projekta-darbs
+# projekta-darbs - Braucienu kalkulators
+Šī projekta mērķis ir izstrādā programu, kas aprēķina cik dārgi izmaksās brauciens ar mašīnu, balstoties uz lietotāja ievadītajiem datiem. Pēc datu izvades un visiem aprēķinie programma automātiski saglabā gan lietotāja doto informāciju, gan aprēķināto lielumu Excel failā. Ja šis ir pirmais ievadītais brauciens no programas, tad tā automātiski iezveido jaunu excel failu, un turpmāk saglabā visus datus tajā. Kā arī programai ir otra funkcija, kura ielādē visus datus no excel tabulas un piedāvā lietotājam atrast braucienus virs noteikta lieluma, piemēram braucienu, kuru summa ir virs pieciem eiro. 
+
+Šājā darbā esmu izmantojis divas bibliotēkas - "os" un "openpyxl". Bibliotēku os es izmantoju tādēļ, lai programma varētu apskatīt vai jau pastāv excel fails, kurā ir saglabāti iepriekšējie braucieni, ja šis excel fails jau eksistē tad programma tajā vienkārši pievieno jauno braucienu, bet ja šis fails neeksistē tad tas izveido jaunu excel failu. Savukārt "openpyxl" bibliotēka palīdz noformēt izveidoto excel failu. 
