@@ -2,7 +2,7 @@ import os
 from openpyxl import Workbook, load_workbook
 
 class Trip:
-    def __init__(self, distance, fuel_efficieny, fuel_price):
+    def __init__(self, distance, fuel_efficiency, fuel_price):
         self.distance = distance
         self.fuel_efficiency = fuel_efficieny
         self.fuel_price = fuel_price
